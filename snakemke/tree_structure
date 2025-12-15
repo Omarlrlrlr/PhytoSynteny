@@ -1,0 +1,18 @@
+snakemake/
+├── Snakefile
+├── config.yaml
+├── envs/
+│   ├── plantismash.yml
+│   ├── mcscan.yml
+│   ├── pytools.yml
+│   └── rvis.yml
+├── scripts/
+│   ├── run_plantismash.sh
+│   ├── run_mcscan.sh
+│   ├── make_bed.py
+│   ├── visualisation.R
+├── example/
+│   ├── test.fa
+│   └── test.gff3
+├── results/     
+
