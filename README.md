@@ -8,6 +8,24 @@ PhytoSynteny provides an end-to-end workflow to identify biosynthetic gene clust
 
 <img width="1150" height="373" alt="Screenshot from 2025-12-15 05-11-38" src="https://github.com/user-attachments/assets/e3a45ff8-e56c-4964-80ca-2ed5120f0cc9" />
 
+**🔄 Pipeline Workflow**
+
+PlantiSyn performs a complete comparative analysis of biosynthetic gene clusters across multiple plant genomes through the following steps:
+
+***Biosynthetic gene cluster detection***
+PlantiSMASH is executed on each input genome to identify and annotate biosynthetic gene clusters.
+
+***Orthologous gene detection***
+MCScan is used to detect orthologous genes and conserved genomic blocks between genomes.
+
+***Orthologous cluster identification***
+Custom scripts are applied to identify biosynthetic gene clusters that are orthologous across genomes based on gene orthology and genomic context.
+
+***Cluster annotation and formatting***
+BED-formatted files and link files are generated to describe orthologous clusters and gene-to-gene relationships.
+
+***Visualization of synteny and orthology***
+Synteny visualizations are produced using the GeneViewer library in R, enabling intuitive graphical representation of orthologous clusters and genes.
 
 
 **📖 Citation**
