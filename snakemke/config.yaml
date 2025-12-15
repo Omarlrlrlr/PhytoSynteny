@@ -1,0 +1,7 @@
+genome: "/home/omar/Desktop/genomes/finola/ncbi_dataset/data/finola_cann_DB"
+gff: "/home/omar/Desktop/genomes/finola/ncbi_dataset/data/finola_cann_DB/finola_gene_avec_description.gff"
+
+outdir: "results"
+prefix: "sample"
+
+threads: 4
