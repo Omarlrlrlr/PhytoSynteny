@@ -1,0 +1,60 @@
+rule all:
+    input:
+        directory("results/plantismash/output")
+
+########################################
+# 1. Clone PlantiSMASH
+########################################
+
+rule clone_plantismash:
+    output:
+        directory("plantismash")
+    shell:
+        """
+        git clone https://github.com/plantismash/plantismash.git plantismash
+        """
+
+########################################
+# 2. Create PlantiSMASH conda environment
+########################################
+
+rule create_plantismash_env:
+    input:
+        repo="plantismash"
+    output:
+        marker=".plantismash_env_created"
+    shell:
+        """
+        conda config --set channel_priority flexible
+
+        conda env create -f plantismash/environment.yml
+
+        touch .plantismash_env_created
+        """
+
+########################################
+# 3. Run PlantiSMASH
+########################################
+
+rule run_plantismash:
+    input:
+        genome="/home/omar/Desktop/genomes/finola/ncbi_dataset/data/finola_cann_DB/Finola.genome.fasta",
+        gff="/home/omar/Desktop/genomes/finola/ncbi_dataset/data/finola_cann_DB/cleaned.gff3",
+        env=".plantismash_env_created"
+    output:
+        directory("results/plantismash/output")
+    threads: 6
+    shell:
+        """
+        source $(conda info --base)/etc/profile.d/conda.sh
+        conda activate plantismash
+
+        plantismash \
+          --gff3 {input.gff} \
+          --cpus {threads} \
+          --outputfolder {output} \
+          --taxon plants \
+          --clusterblast \
+          --knownclusterblast \
+          {input.genome}
+        """
