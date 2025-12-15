@@ -8,3 +8,15 @@ PhytoSynteny provides an end-to-end workflow to identify biosynthetic gene clust
 
 <img width="1150" height="373" alt="Screenshot from 2025-12-15 05-11-38" src="https://github.com/user-attachments/assets/e3a45ff8-e56c-4964-80ca-2ed5120f0cc9" />
 
+
+
+**📖 Citation**
+
+If you use PlantiSyn in your research, please cite:
+
+plantiSMASH 2.0: improvements to detection, annotation, and prioritization of plant biosynthetic gene clusters Elena Del Pup, Charlotte Owen, Ziqiang Luo, Hannah E. Augustijn, Arjan Draisma, Guy Polturak, Satria A. Kautsar, Anne Osbourn, Justin J.J. van der Hooft, Marnix H. Medema bioRxiv 2025.10.28.683968; doi: https://doi.org/10.1101/2025.10.28.683968
+Mölder F, Jablonski KP, Letcher B et al. Sustainable data analysis with Snakemake [version 2; peer review: 2 approved]. F1000Research 2021, 10:33 (https://doi.org/10.12688/f1000research.29032.2) 
+Tang H, Krishnakumar V, Zeng X, Xu Z, Taranto A, Lomas JS, Zhang Y, Huang Y, Wang Y, Yim WC, Zhang J, Zhang X. JCVI: A versatile toolkit for comparative genomics analysis. Imeta. 2024 Jun 12;3(4):e211. doi: 10.1002/imt2.211. PMID: 39135687; PMCID: PMC11316928.
+
+
+
