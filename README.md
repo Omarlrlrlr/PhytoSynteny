@@ -12,7 +12,7 @@ PhytoSynteny provides an end-to-end workflow to identify biosynthetic gene clust
 
 PlantiSyn performs a complete comparative analysis of biosynthetic gene clusters across multiple plant genomes through the following steps:
 
-***Biosynthetic gene cluster detection***
+***Biosynthetic gene cluster detection***<br>
 PlantiSMASH is executed on each input genome to identify and annotate biosynthetic gene clusters.
 
 ***Orthologous gene detection***
